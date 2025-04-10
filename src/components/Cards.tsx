@@ -3,7 +3,7 @@ export default async function Cards() {
     "https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e:one&unique=prints"
   );
   const cards = await data.json();
-
+  
   interface Card {
     name: string;
     image_uris: {

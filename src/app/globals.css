@@ -94,6 +94,10 @@ body {
   }
 }
 
+@theme{
+  --font-keyrune: "KeyRune", sans-serif;
+}
+
 .cinzel-700 {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;

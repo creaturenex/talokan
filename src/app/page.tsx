@@ -3,6 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import Cards from "@/components/Cards";
+import localFont from "next/font/local";
+
+const keyRune = localFont({
+  src: '../../public/fonts/keyrune-master/fonts/keyrune.ttf',
+  variable: '--font-keyrune',
+  display: 'swap',
+})
+
 
 export default function Home() {
   return (
@@ -25,6 +33,11 @@ export default function Home() {
         <h2 className="text-2xl font-medium">
           Another deck builder for Magic: The Gathering
         </h2>
+
+        <div className={keyRune.variable}>
+          <i className="ss ss-mor text-black"/ >
+        </div>
+
         <div className="">
           <div className="flex items-center justify-center gap-2">
             <span className="text-zinc-200">Search by:</span>
@@ -57,12 +70,12 @@ export default function Home() {
             />
           </div>
 
-          <Button className="bg-[#ff003f]"/>
-          <Button className="bg-[#ff3f00]"/>
-          <Button className="bg-[#ffbf00]"/>
-          <Button className="bg-[#009688]"/>
-          <Button className="bg-[#006064]"/>
-          
+          <Button className="bg-[#ff003f]" />
+          <Button className="bg-[#ff3f00]" />
+          <Button className="bg-[#ffbf00]" />
+          <Button className="bg-[#009688]" />
+          <Button className="bg-[#006064]" />
+
 
 
 
